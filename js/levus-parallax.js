@@ -17,6 +17,7 @@
     // час вмикання анімації
     if (window.pageYOffset > marginTop && window.pageXOffset < marginBottom) {
       articles.forEach(article => {
+        // при прокрутці фон отримує зсув
         article.style.backgroundPositionY = `-${(window.pageYOffset - marginTop) / 2}px`;
       });
     }
