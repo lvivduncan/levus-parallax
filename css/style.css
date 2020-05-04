@@ -16,9 +16,16 @@ body{
   background: lightpink;
 }
 
+@media(max-width: 950px){
+  .wrapper{
+    width: 95%;
+  }
+}
+
 article{
   height: 200px;
   background-repeat: no-repeat!important;
+  background-position-x: center!important;
 }
 
 article:nth-child(1){
