@@ -1,0 +1,36 @@
+*,::after,::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 100px;
+  background: lightblue;
+}
+
+.wrapper{
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  background: lightpink;
+  /* overflow: hidden; */
+}
+
+article{
+  height: 200px;
+  background-repeat: no-repeat!important;
+}
+
+article:nth-child(1){
+  background: url('https://picsum.photos/id/1/900/600');
+}
+article:nth-child(2){
+  background: url('https://picsum.photos/id/2/900/600');
+}
+article:nth-child(3){
+  background: url('https://picsum.photos/id/3/900/600');
+}
+article:nth-child(4){
+  background: url('https://picsum.photos/id/4/900/600');
+}
