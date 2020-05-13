@@ -2,13 +2,14 @@
   // обгортка
   const parallax = document.querySelector('.levus-parallax');
 
-  // відступ згори від батьківського елемента (у нашому випадку -- body) до паралаксу
-  const offsetTop = parallax.offsetTop;
+  if (parallax != null) {
 
-  // елементи 
-  const articles = document.querySelectorAll('.levus-parallax article');
+    // відступ згори від батьківського елемента (у нашому випадку -- body) до паралаксу
+    const offsetTop = parallax.offsetTop;
 
-  if (parallax != 'undefined' && parallax != null) {
+    // елементи 
+    const articles = document.querySelectorAll('.levus-parallax article');
+
     // вішаємо подію "скрол"
     window.addEventListener('scroll', () => {
 
