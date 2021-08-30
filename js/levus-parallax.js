@@ -8,7 +8,7 @@
     const offsetTop = parallax.offsetTop;
 
     // елементи 
-    const articles = document.querySelectorAll('.levus-parallax article');
+    const articles = document.querySelectorAll('.levus-parallax picture');
 
     // вішаємо подію "скрол"
     window.addEventListener('scroll', () => {
@@ -24,8 +24,10 @@
         // час вмикання анімації (коли розмір видимого вікна + прокрутка більша за відступ до блока)
         if (hightWindow + scroll > offsetTop) {
 
-          // при прокрутці фон отримує зсув
-          article.style.backgroundPositionY = `-${(hightWindow + scroll - offsetTop) / 3}px`;
+          // при прокрутці picture отримує зсув
+          const offset = Math.round((hightWindow + scroll - offsetTop) / 3);
+
+          article.style.transform = `translateY(-${offset}px)`;
         } else {
 
           // видаляємо стилі
