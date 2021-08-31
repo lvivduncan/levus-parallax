@@ -8,7 +8,7 @@
     const offsetTop = parallax.offsetTop;
 
     // елементи 
-    const articles = document.querySelectorAll('.levus-parallax picture');
+    const articles = document.querySelectorAll('.levus-parallax picture img');
 
     // вішаємо подію "скрол"
     window.addEventListener('scroll', () => {
